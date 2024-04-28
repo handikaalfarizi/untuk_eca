@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8' />
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'
+  name='viewport' />
+<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+
+<head>
+  <title>Selamat Pagi Cantik</title>
+  <link rel="icon" type="image/x-icon" href="https://malasid.github.io/favicon.png">
+  <meta name="description" content="HTML Bucin Malas.id">
+  <!-- 
+  Made with love by Rayys!
+  
+     Blog: https://PalingIT.com
+     Instagram: @rayyarrr
+     TikTok: @rayy4r
+     Email: rayyar0703@gmail.com
+     
+  Thanks to all <3
+-->
+</head>
+
+<body>
+
+  <!-- Ganti Audio di sini -->
+  <audio
+    src="https://cdn.discordapp.com/attachments/1128412205742821497/1234231803150209187/videoplayback.mp3?ex=662ffb70&is=662ea9f0&hm=5137e048a80a572c03c0ac79a02e42efa22c6f7924c2d450d761bc269988fe4f&"
+    id="linkmp3" class="sembunyi"></audio>
+
+  <div id="bodyblur">
+    <!-- Wallpaper --><img
+      src="https://cdn.discordapp.com/attachments/1128412205742821497/1234218004586172466/000001.jpeg?ex=662fee96&is=662e9d16&hm=2051c0a8a1ee402d68be2eee091d5feb7ed03d5d1656cfb544dee9a0a972d35d&"
+      id="wallpaper" />
+  </div>
+
+  <div id='Content'>
+
+    <div id="ftAwal">
+      <!-- Stiker Pembuka -->
+      <img src="https://feeldreams.github.io/heart.png" id="ftoAwal" />
+    </div>
+
+    <div id="loveIn">
+      <!-- Tombol LOVE --><label class='lovein'>❤️</label>
+    </div>
+    <p id="ket">klik love</p>
+
+    <div class="kumpulan">
+      <img
+        src="https://cdn.discordapp.com/attachments/1128412205742821497/1234217980012007434/00004.jpeg?ex=662fee91&is=662e9d11&hm=3f9cd9ee660fe2497086a3c12cde80e14cc0cfa47fc7ea2eb112ef87da62343f&"
+        id="wallpaper2" />
+      <img
+        src="https://cdn.discordapp.com/attachments/1128412205742821497/1234218025281130507/00002.jpeg?ex=662fee9b&is=662e9d1b&hm=fc967161251f3e4a5438043a5228080d42f5887e27bc5c3391a001356266867b&"
+        id="wallpaper3" />
+      <img
+        src="https://cdn.discordapp.com/attachments/1128412205742821497/1234218039684108369/00003.jpeg?ex=662fee9f&is=662e9d1f&hm=fba743ea7048dfc097f332834bdebd8bd628e41adf786c6597dfbf670f5dba7b&"
+        id="wallpaper4" />
+      <img
+        src="https://media.discordapp.net/attachments/1128412205742821497/1234218055882506240/00005.jpeg?ex=662feea3&is=662e9d23&hm=e73205a6604d7ecb8061f0c7098d5007c7f38405c6ab566c2c0e8d1f379f22d6&=&format=webp&width=547&height=437"
+        id="wallpaper5" />
+    </div>
+
+    <div>
+      <blockquote id='bq'>
+        <p id="kalimat"></p>
+
+        <p id="pesanAkhir" class="gaya4"></p>
+
+        <p id="ketlanjut">klik untuk lanjut</p>
+
+      </blockquote>
+    </div>
+
+    <!-- Tombol Kirim Pesan -->
+    <div id="Tombol">
+      <a id="By">&#128140; balas</a>
+    </div>
+
+  </div>
+
+  <!-- Jangan Edit Bagian Ini -->
+  <script>
+    const body = document.querySelector("body"); const swalst = Swal.mixin({timer: 2500, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90, }); audio = new Audio('' + linkmp3.src); ftganti = 0; fungsi = 0; fungsiAwal = 0; function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90) + "vw"; heart.style.animationDuration = (Math.random() * 3) + 2 + "s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()} }, 100); Content.style = "opacity:1;margin-top:14vh"; const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageHeight: 80, });
+    const inip = []; const iniwp = []; iden = 1; iniwp[1] = wallpaper.src; iniwp[2] = wallpaper2.src; iniwp[3] = wallpaper3.src; iniwp[4] = wallpaper4.src; iniwp[5] = wallpaper5.src;
+
+    inip[1] = "haiii kamu,<br><br>selamat pagi...<br><br>resapi lirik lagu ini sampe abis yaa🤪";
+    inip[2] = "baru bangun ya?<br><br>aku harap hari ini kamu ga bt lagi yaaa😊";
+    inip[3] = "buatlah keberadaanku menjadi pundak untuk kamu bersandar,<br><br>sibukanlah aku disetiap kegiatanmu🥺";
+    inip[4] = "meskipun aku tidak seromantis, seperhatian, sepeka, dan sebaik cowo lain,<br><br>tapi aku selalu berusaha untuk menjadi rumah kedua untuk kamu🤗";
+    inip[5] = "dan ku katakan sekali lagi ya,<br><br>karena keberadaamu sangat berarti bagiku🥰";
+
+    pesanAkhir1 = inip[iden];
+    pesanAkhir3 = "kamu melebihi dari kata pantas untuk aku miliki🤍";
+
+    totalPesan = 5; //Input total pesan (slide) di sini ya!
+  </script>
+  <script src="script.js"></script>
+  <!-- Sampai Sini -->
+</body>
+
+</html>
